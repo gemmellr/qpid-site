@@ -32,7 +32,7 @@ documentation = \
 <div class="two-column" markdown="1">
 
  - [API reference](api/index.html)
- - [Examples](https://github.com/apache/qpid-protonj2/tree/{source_release}/examples)
+ - [Client Examples](https://github.com/apache/qpid-protonj2/tree/{source_release}/protonj2-client-examples)
 
 </div>
 """

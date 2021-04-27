@@ -23,11 +23,12 @@ from generate import *
 def gen_protonj2_api(release, source_dir, release_dir):
     toplevel_pom = join(source_dir, "pom.xml")
     generated_docs = join(source_dir, "target/site/apidocs")
+    modules = ".,protonj2,protonj2-client,protonj2-test-driver"
     output_dir = join(release_dir, "api")
 
     remove(output_dir)
 
-    call("mvn -f {} clean javadoc:aggregate", toplevel_pom)
+    call("mvn -f {} clean javadoc:aggregate -pl '{}'", toplevel_pom, modules)
 
     copy(generated_docs, output_dir)
 
