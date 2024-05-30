@@ -97,7 +97,7 @@
 
 <p>Links are grouped in a <span class='object_link'><a href="Qpid/Proton/Session.html" title="Qpid::Proton::Session (class)">Qpid::Proton::Session</a></span>. Messages in the same session are sent sequentially, while those on different sessions can be interleaved. A large message being sent on one session does not block messages being sent on another session.</p>
 
-<p>Sessions belong to a <span class='object_link'><a href="Qpid/Proton/Connection.html" title="Qpid::Proton::Connection (class)">Qpid::Proton::Connection</a></span>. If you don&#39;t need multiple sessions, a connection will create links directly using a default session.</p>
+<p>Sessions belong to a <span class='object_link'><a href="Qpid/Proton/Connection.html" title="Qpid::Proton::Connection (class)">Qpid::Proton::Connection</a></span>. If you don’t need multiple sessions, a connection will create links directly using a default session.</p>
 
 <p>A <span class='object_link'><a href="Qpid/Proton/Transfer.html" title="Qpid::Proton::Transfer (class)">Qpid::Proton::Transfer</a></span> represents the transfer of a message, the <span class='object_link'><a href="Qpid/Proton/Delivery.html" title="Qpid::Proton::Delivery (class)">Qpid::Proton::Delivery</a></span> subclass allows a receiver to accept or reject an incoming message. The <span class='object_link'><a href="Qpid/Proton/Tracker.html" title="Qpid::Proton::Tracker (class)">Qpid::Proton::Tracker</a></span> subclass allows a sender to track the status of a sent message and find out if it was accepted or rejected.</p>
 
@@ -119,7 +119,7 @@
 
 <p>In the case of a broker, the source or target usually refers to a queue or topic. In general they can refer to any AMQP-capable node.</p>
 
-<p>In the request-response pattern, a request message carries a reply-to address for the response message. This can be any AMQP address, but it is often useful to create a temporary address for the response message. The client creates a receiver with no source address and the dynamic flag set. The server generates a unique source address for the receiver, which is discarded when the link closes. The client uses this source address as the reply-to when it sends the request, so the response is delivered to the client&#39;s receiver.</p>
+<p>In the request-response pattern, a request message carries a reply-to address for the response message. This can be any AMQP address, but it is often useful to create a temporary address for the response message. The client creates a receiver with no source address and the dynamic flag set. The server generates a unique source address for the receiver, which is discarded when the link closes. The client uses this source address as the reply-to when it sends the request, so the response is delivered to the client’s receiver.</p>
 
 <p>The server_direct.cpp example shows how to implement a request-response server.</p>
 
@@ -145,9 +145,9 @@
 </div></div>
 
       <div id="footer">
-  Generated on Mon Mar 21 10:17:44 2022 by
-  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.26 (ruby-3.0.2).
+  Generated on Thu May 30 12:11:34 2024 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.36 (ruby-3.2.2).
 </div>
 
     </div>

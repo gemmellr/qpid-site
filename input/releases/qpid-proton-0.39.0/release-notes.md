@@ -44,6 +44,7 @@ documentation, see the [release overview](index.html).
 
 ## Bugs fixed
 
+ - [PROTON-1162](https://issues.apache.org/jira/browse/PROTON-1162) - connection capabilities are not sent correctly by default
  - [PROTON-2401](https://issues.apache.org/jira/browse/PROTON-2401) - on_link_closed is not called when remote detaches link and locally link is also closed.
  - [PROTON-2643](https://issues.apache.org/jira/browse/PROTON-2643) - SSL connection hanging
  - [PROTON-2653](https://issues.apache.org/jira/browse/PROTON-2653) - [cpp] Can't see tracing documentation on public website.

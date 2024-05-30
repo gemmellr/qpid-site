@@ -106,7 +106,7 @@
 
 <p>A <span class='object_link'><a href="Container.html" title="Qpid::Proton::Container (class)">Container</a></span> can have multiple threads calling <span class='object_link'><a href="Container.html#run-instance_method" title="Qpid::Proton::Container#run (method)">Container#run</a></span> The container ensures that work associated with a single <span class='object_link'><a href="Connection.html" title="Qpid::Proton::Connection (class)">Connection</a></span> or <span class='object_link'><a href="Listener.html" title="Qpid::Proton::Listener (class)">Listener</a></span> is <em>serialized</em> - two threads will never concurrently call handlers associated with the same object.</p>
 
-<p>To have your own code serialized in the same, add a block to the connection&#39;s <span class='object_link'><a href="" title="Qpid::Proton::WorkQueue (class)">WorkQueue</a></span>. The block will be invoked as soon as it is safe to do so.</p>
+<p>To have your own code serialized in the same, add a block to the connection’s <span class='object_link'><a href="" title="Qpid::Proton::WorkQueue (class)">WorkQueue</a></span>. The block will be invoked as soon as it is safe to do so.</p>
 
 <p>A <span class='object_link'><a href="Connection.html" title="Qpid::Proton::Connection (class)">Connection</a></span> and the objects associated with it (<span class='object_link'><a href="Session.html" title="Qpid::Proton::Session (class)">Session</a></span>, <span class='object_link'><a href="Sender.html" title="Qpid::Proton::Sender (class)">Sender</a></span>, <span class='object_link'><a href="Receiver.html" title="Qpid::Proton::Receiver (class)">Receiver</a></span>, <span class='object_link'><a href="Delivery.html" title="Qpid::Proton::Delivery (class)">Delivery</a></span>, <span class='object_link'><a href="Tracker.html" title="Qpid::Proton::Tracker (class)">Tracker</a></span>) are not thread safe, so if you have multiple threads calling <span class='object_link'><a href="Container.html#run-instance_method" title="Qpid::Proton::Container#run (method)">Container#run</a></span> or if you want to affect objects managed by the container from non-container threads you need to use the <span class='object_link'><a href="" title="Qpid::Proton::WorkQueue (class)">WorkQueue</a></span></p>
 
@@ -419,9 +419,9 @@
 </div>
 
       <div id="footer">
-  Generated on Mon Mar 21 10:17:45 2022 by
-  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.26 (ruby-3.0.2).
+  Generated on Thu May 30 12:11:35 2024 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.36 (ruby-3.2.2).
 </div>
 
     </div>
